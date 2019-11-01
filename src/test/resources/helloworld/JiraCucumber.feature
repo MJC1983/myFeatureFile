@@ -1,6 +1,7 @@
-Feature: This is my feature file
+Feature: Is it Friday yet?
+  Everybody wants to know when it's Friday
 
-  Scenario: This is my scenario
-    Given My alarm goes off in the morning
-    And I wake up
-    Then I will get out of bed
+  Scenario: Sunday isn't Friday
+    Given today is Sunday
+    When I ask whether it's Friday yet
+    Then I should be told "Nope"
